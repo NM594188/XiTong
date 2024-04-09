@@ -1,0 +1,320 @@
+<head>
+    <title>终端在线推广单综合管理系统</title>
+    <style>
+        .logo {
+            display: block;
+            margin: 1 auto;
+            width: 5px;
+            height: 5px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            width: 80%;
+        }
+
+        .search-box {
+            text-align: right;
+            margin-bottom: 9px;
+        }
+
+        .search-input {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .refresh-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .timestamp {
+            color: #FFCC00;
+        }
+
+        .highlight {
+            color: #FFCC00;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        } 
+
+        .shadow-border {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            /* 阴影效果 */
+            border: 1px solid #ccc;
+            /* 边框样式 */
+        }
+    </style>
+</head>
+        <tr>
+<table border="1" class="shadow-border" width="13%" height="51" bordercolorlight="#E1E1E1" bordercolordark="#FFFFFF">
+            <td width="53%" height="30" class="shadow-border"  style="background-image: url(images/dhk_02.gif); "><b style="color:#FFFFFF;">&nbsp;&nbsp;提 款 详 情 ：</b></font>
+
+    </td> </tr>
+        <tr>
+            <td width="133%" align="left"  class="shadow-border" width="133%" height="11" bordercolorlight="#E1E1E1" bordercolordark="#FFFFFF">
+<body style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-size: cover;">
+                <font size="1">版本20.03.06 嘉骅合作：<img src="file:///C:/Users/Diygame/Desktop/系统/images/rt.png" width="100" height="15" border="0" alt=""></font>
+            </body></font></td>
+        </tr>
+        <tr>
+<table border="1" class="shadow-border" width="133%" height="51" bordercolorlight="#E1E1E1" bordercolordark="#FFFFFF">
+<body style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-size: cover;">
+<th width="10%" align="center" height="28" bgcolor="#F5F5F5"><font size="1" face="Segoe UI" color="#000000" span class="select-box" style="width:20px"><select class="select" name="state">
+<option value="">全部</option>
+<option value="0" >未审核</option>
+<option value="1" >已完成</option>
+<option value="2" >退回</option>
+<option value="3" >取消</option>
+</body>
+</font>
+     
+<th width="20%" align="center" height="28" bgcolor="#F5F5F5" face="Segoe UI"class="shadow-border">用&nbsp;户&nbsp;名：<input class="input-text" type="text" style="width:100px;" value="" name="trano">  </font></span></td>
+
+<th width="20%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border">金额：<input class="input-text" type="text" style="width:100px;" value="" name="trano">  </font></span></td>
+
+<th width="20%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><body style="background-image: url(images/background.jpg); background-repeat: no-repeat; background-size: cover;">单号：<input class="input-text" type="text" style="width:100px;" value="" name="trano"></font></span></td>
+ 
+<th width="30%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><button class="search-button" type="button" font size="3" >搜索</button>&nbsp; <button class="refresh-button" type="button" font size="3" >刷新</button>&nbsp;<input type="text" class="search-input" placeholder="">
+</body></font></span></td></th></tr>
+
+<table border="1" class="shadow-border" width="133%" height="51" bordercolorlight="#E1E1E1" bordercolordark="#FFFFFF">
+  <tr>
+	    <th width="10%" align="center" height="38" bgcolor="#F5F5F5"><font size="2" face="Segoe UI" color="#000000">收款人</font></td>
+	    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">对接状态</font></td>
+	    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">收款方式</font></td>
+	    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">垫资金额</font></td>
+	    <th width="10%" align="center" height="38" bgcolor="#F5F5F5"><font size="2" face="Segoe UI" color="#000000">返款金额</font></td>
+	    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">在线</font></td>
+	    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">佣金</font></td>
+                    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">认证状态</font></td>
+                    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">提示信息</font></td>
+                    <th width="10%" align="center" height="38" bgcolor="#F5F5F5" ><font size="2" face="Segoe UI" color="#000000">日期</font></td>
+	</tr>
+	<tr>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">唐&nbsp;精&nbsp;云</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="支付宝" NAME="Submit30"></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/mm.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+		<tr>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">焦&nbsp;小&nbsp;桓</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"> 已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+		<tr>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">陈&nbsp;松&nbsp;岩</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+                     <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+		<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">卢&nbsp;广&nbsp;华</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"> <INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"> <script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+		<tr>
+	  <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 刘&nbsp;强</font></span></td>
+	 <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> <INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 18000.00</font></span></td>
+	 <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 28000.00</font></span></td>
+	 <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> <img src="file:///C:/Users/Diygame/Desktop/系统/images/mm.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> <INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> <script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+                	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 李&nbsp;岚</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> <INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 18000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 28000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> <img src="file:///C:/Users/Diygame/Desktop/系统/images/mm.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> 已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI"  color="#000000"> <INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"> <script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000">黄&nbsp;娟&nbsp;遂</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000">异常</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000"><INPUT TYPE="submit" VALUE="支付宝" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/mm.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000">需修复</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#f50000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">许&nbsp;剑&nbsp;辉</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>	    
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">酒&nbsp;肆</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="支付宝" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">陈&nbsp;智&nbsp;刚</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">焦&nbsp;天&nbsp;寒</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/mm.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">李&nbsp;玉&nbsp;红</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">万&nbsp;擎</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="支付宝" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>	   
+                     <th width="10%" align="center"height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">李&nbsp;战</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="手机银行" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">吕&nbsp;萌</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="支付宝" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</tr>
+	<tr>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">李&nbsp;亮</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">完成</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="支付宝" NAME="Submit30"></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">2500.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">3000.00</font></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><img src="file:///C:/Users/Diygame/Desktop/系统/images/close.png" id="imgId" width="20" height="20" border="0" alt=""></font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">00.00</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">已认证</font></span></td>
+                    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><INPUT TYPE="submit" VALUE="详情查看" NAME="Submit30"></span></td>
+	    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><script language="JavaScript" src="js/time.js"></script></font></td>		
+	</body>
+</tr>
+
+    </font>
+  </span>
+</td>
+                 </tr>
+   <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes;height:14.25pt'>
+    <td colspan=10 style='background:#3399FF;padding:0cm 0cm 0cm 0cm;height:14.25pt'>
+    <p class=MsoNormal align=center style='text-align:center'>
+<span style='font-size:9.0pt;mso-bidi-font-family:Arial;color:#003F7B'>&nbsp;第&nbsp;<span lang="en-us">&nbsp;10&nbsp;</span>&nbsp;页&nbsp;
+&nbsp;共&nbsp;<span lang=EN-US>854566</span>&nbsp;页&nbsp;<span lang=EN-US><ahref="结算中心.htm"><span lang=EN-US><span lang=EN-US>&nbsp;上&nbsp;一&nbsp;页&nbsp;</span></a>
+<a href=" 结算中心.htm"><span lang="en-us">下 一 页</span></a>
+
+	<span lang=EN-US style="font-size: 9.0pt; mso-bidi-font-family: Arial; color: #003F7B">
+<INPUT TYPE="text" SIZE="3" NAME="textfield" VALUE="10"></span>
+<span style='font-size:9.0pt;mso-bidi-font-family:Arial;color:#003F7B'> 页</span>
+ <span lang=EN-US><o:p></o:p></span></span></p>
+    </td>
+   </tr>
+
+		</table>
+   </table>
+</html>
