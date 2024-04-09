@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>贷款计算器</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.select-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group-addon {
+    padding: 10px;
+    background-color: #e9e9e9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <form method="POST" name="loanForm" class="form-horizontal">
+        <div class="form-group">
+            <label>您想申请的贷款额:人民币</label>
+            <input name="loanAmt" type="text" class="form-control" placeholder="(10,000 - 300,000)">
+        </div>
+
+        <div class="form-group">
+            <label>您想申请的还款期:</label>
+            <div class="select-group">
+                <select name="repaymentPeriod" class="form-control">
+                    <option value="0">请选择</option>
+                    <option value="1">1</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                    <option value="24">24</option>
+                    <option value="30">30</option>
+                    <option value="36">36</option>
+                    <option value="42">42</option>
+                    <option value="48">48</option>
+                    <option value="54">54</option>
+                    <option value="60">60</option>
+                </select>
+                <div class="input-group-addon">月</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>私人贷款年利率:</label>
+            <div class="select-group">
+                <input name="loanInteresRate" type="text" class="form-control" placeholder="">
+                <div class="input-group-addon">%</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>还款方式:</label>
+            <select name="repaymentFreq" class="form-control">
+                <option value="0">请选择</option>
+                <option value="1">等额本金</option>
+                <option value="2">等额本息</option>
+                <option value="3">先息后本</option>
+            </select>
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="calculate-btn">计算</button>
+            <button type="button" class="reset-btn">重设</button>
+        </div>
+    </form>
+
+    <div class="result"></div>
+    <div class="repayment-table"></div>
+</div>
+
+<script>
+    document.querySelector('.calculate-btn').addEventListener('click', function() {
+        calculate();
+    });
+
+    document.querySelector('.reset-btn').addEventListener('click', function() {
+        resetForm();
+    });
+
+    function calculate() {
+        var loanAmt = parseFloat(document.getElementsByName('loanAmt')[0].value);
+        var repaymentPeriod = parseFloat(document.getElementsByName('repaymentPeriod')[0].value);
+        var loanInterestRate = parseFloat(document.getElementsByName('loanInteresRate')[0].value);
+        var repaymentFreq = parseFloat(document.getElementsByName('repaymentFreq')[0].value);
+
+        var totalPayment = 0;
+        var monthlyPayment = 0;
+
+        if (repaymentFreq == 1) {
+            monthlyPayment = loanAmt / repaymentPeriod + loanAmt * loanInterestRate / 1200;
+            totalPayment = monthlyPayment * repaymentPeriod;
+        } else if (repaymentFreq == 2) {
+            monthlyPayment = loanAmt * loanInterestRate / 1200 * Math.pow((1 + loanInterestRate / 1200), repaymentPeriod) / (Math.pow((1 + loanInterestRate / 1200), repaymentPeriod) - 1);
+            totalPayment = monthlyPayment * repaymentPeriod;
+        } else if (repaymentFreq == 3) {
+            monthlyPayment = loanAmt * loanInterestRate / 1200;
+            totalPayment = monthlyPayment * repaymentPeriod + loanAmt;
+        }
+
+        var resultHTML = '<p>总还款额：' + totalPayment.toFixed(2) + ' 人民币</p><p>月还款额：' + monthlyPayment.toFixed(2) + ' 人民币</p>';
+
+        var tableHTML = '<table><thead><tr><th>月份</th><th>还款日期</th><th>月还款额</th></tr></thead><tbody>';
+        var currentDate = new Date();
+        for (var i = 1; i <= repaymentPeriod; i++) {
+            var year = currentDate.getFullYear();
+            var month = currentDate.getMonth() + i;
+            var lastDayOfMonth = new Date(year, month + 1, 0);
+            var repaymentDate = lastDayOfMonth.toLocaleDateString();
+            tableHTML += '<tr><td>' + i + '</td><td>' + repaymentDate + '</td><td>' + monthlyPayment.toFixed(2) + '</td></tr>';
+        }
+        tableHTML += '</tbody></table>';
+
+        document.querySelector('.result').innerHTML = resultHTML;
+        document.querySelector('.repayment-table').innerHTML = tableHTML;
+    }
+
+    function resetForm() {
+        document.querySelector('form').reset();
+        document.querySelector('.result').innerHTML = '';
+        document.querySelector('.repayment-table').innerHTML = '';
+    }
+</script>
+
+</body>
+</html>
