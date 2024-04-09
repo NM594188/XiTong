@@ -3,7 +3,7 @@
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>´û¿î¼ÆËãÆ÷</title>
+<title>è´·æ¬¾è®¡ç®—å™¨</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -80,15 +80,15 @@ table th {
 <div class="container">
     <form method="POST" name="loanForm" class="form-horizontal">
         <div class="form-group">
-            <label>ÄúÏëÉêÇëµÄ´û¿î¶î:ÈËÃñ±Ò</label>
+            <label>æ‚¨æƒ³ç”³è¯·çš„è´·æ¬¾é¢:äººæ°‘å¸</label>
             <input name="loanAmt" type="text" class="form-control" placeholder="(10,000 - 300,000)">
         </div>
 
         <div class="form-group">
-            <label>ÄúÏëÉêÇëµÄ»¹¿îÆÚ:</label>
+            <label>æ‚¨æƒ³ç”³è¯·çš„è¿˜æ¬¾æœŸ:</label>
             <div class="select-group">
                 <select name="repaymentPeriod" class="form-control">
-                    <option value="0">ÇëÑ¡Ôñ</option>
+                    <option value="0">è¯·é€‰æ‹©</option>
                     <option value="1">1</option>
                     <option value="6">6</option>
                     <option value="12">12</option>
@@ -101,12 +101,12 @@ table th {
                     <option value="54">54</option>
                     <option value="60">60</option>
                 </select>
-                <div class="input-group-addon">ÔÂ</div>
+                <div class="input-group-addon">æœˆ</div>
             </div>
         </div>
 
         <div class="form-group">
-            <label>Ë½ÈË´û¿îÄêÀûÂÊ:</label>
+            <label>ç§äººè´·æ¬¾å¹´åˆ©ç‡:</label>
             <div class="select-group">
                 <input name="loanInteresRate" type="text" class="form-control" placeholder="">
                 <div class="input-group-addon">%</div>
@@ -114,18 +114,18 @@ table th {
         </div>
 
         <div class="form-group">
-            <label>»¹¿î·½Ê½:</label>
+            <label>è¿˜æ¬¾æ–¹å¼:</label>
             <select name="repaymentFreq" class="form-control">
-                <option value="0">ÇëÑ¡Ôñ</option>
-                <option value="1">µÈ¶î±¾½ğ</option>
-                <option value="2">µÈ¶î±¾Ï¢</option>
-                <option value="3">ÏÈÏ¢ºó±¾</option>
+                <option value="0">è¯·é€‰æ‹©</option>
+                <option value="1">ç­‰é¢æœ¬é‡‘</option>
+                <option value="2">ç­‰é¢æœ¬æ¯</option>
+                <option value="3">å…ˆæ¯åæœ¬</option>
             </select>
         </div>
 
         <div class="button-group">
-            <button type="button" class="calculate-btn">¼ÆËã</button>
-            <button type="button" class="reset-btn">ÖØÉè</button>
+            <button type="button" class="calculate-btn">è®¡ç®—</button>
+            <button type="button" class="reset-btn">é‡è®¾</button>
         </div>
     </form>
 
@@ -162,9 +162,9 @@ table th {
             totalPayment = monthlyPayment * repaymentPeriod + loanAmt;
         }
 
-        var resultHTML = '<p>×Ü»¹¿î¶î£º' + totalPayment.toFixed(2) + ' ÈËÃñ±Ò</p><p>ÔÂ»¹¿î¶î£º' + monthlyPayment.toFixed(2) + ' ÈËÃñ±Ò</p>';
+        var resultHTML = '<p>æ€»è¿˜æ¬¾é¢ï¼š' + totalPayment.toFixed(2) + ' äººæ°‘å¸</p><p>æœˆè¿˜æ¬¾é¢ï¼š' + monthlyPayment.toFixed(2) + ' äººæ°‘å¸</p>';
 
-        var tableHTML = '<table><thead><tr><th>ÔÂ·İ</th><th>»¹¿îÈÕÆÚ</th><th>ÔÂ»¹¿î¶î</th></tr></thead><tbody>';
+        var tableHTML = '<table><thead><tr><th>æœˆä»½</th><th>è¿˜æ¬¾æ—¥æœŸ</th><th>æœˆè¿˜æ¬¾é¢</th></tr></thead><tbody>';
         var currentDate = new Date();
         for (var i = 1; i <= repaymentPeriod; i++) {
             var year = currentDate.getFullYear();
