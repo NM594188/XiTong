@@ -1,0 +1,109 @@
+@font-face {
+    font-family: PingFangSC;
+    src: url(http://156.234.211.210/xiangjiao/assets/font/PingFangSC_1.ttf);
+}
+
+body {
+    margin: 0px auto;
+    background-color: #2d2d2c;
+    overflow: hidden;
+}
+
+#capture {
+    width: 800px;
+    height: 1442px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.css-1xamfmm,
+[data-css-1xamfmm] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.36);
+    position: absolute;
+    left: 76%;
+    top: 90%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    transform: scale;
+    border-radius: 50%;
+    visibility: visible;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+span,
+p,
+a {
+    font-family: PingFangSC;
+}
+
+body {
+    background-color: #858585;
+}
+
+.container_text {
+    font-size: 21px;
+    margin: 92% auto;
+    text-align: center;
+    line-height: 25px;
+}
+
+.container .container_text .top_text p,
+.container .container_text .top_text p span {
+    color: #97765d;
+    font-size: 24px;
+}
+
+.container .container_text .center_text p,
+.container .container_text .bottom_text p {
+    color: #3e3e3b;
+}
+
+.container .container_text .center_text p span {
+    color: #57be4f;
+}
+
+.container .container_text .bottom_text p span {
+    color: red;
+}
+
+.container .container_text .center_text {
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.container .container_text .bottom_text {
+    margin: 66px auto;
+    font-size: 21px;
+    line-height: 60px;
+}
+
+.c_text {
+    position: absolute;
+    left: 65%;
+    top: 45.8%;
+    z-index: 98;
+}
+
+.c_text .c_time {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3e3e3b;
+    letter-spacing: 1px;
+}
