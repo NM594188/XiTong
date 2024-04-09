@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style><title>终端在线推广单综合管理系统</title>
+    
+        .logo {
+            display: block;
+            margin: 1 auto;
+            width: 5px;
+            height: 5px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            width: 80%;
+        }
+
+        .search-box {
+            text-align: right;
+            margin-bottom: 9px;
+        }
+
+        .search-input {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .refresh-button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .timestamp {
+            color: #FFCC00;
+        }
+
+        .highlight {
+            color: #FFCC00;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        } 
+    
+.shadow-border {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+        border: 1px solid #ccc; /* 边框样式 */
+    }
+
+</STYLE>				
+<table>
+<td colspan="9" height="30" class="shadow-border" align="left" style="background-image:url(images/dhk_02.gif)" background-repeat:repeat-x;"><b style="color:#FFFFFF; mg src="file:///C:/Users/Diygame/Desktop/系统/images/libg.png/"src="file:///C:/Users/Diygame/Desktop/系统/images/loginsj.png/" id="imgId">   修 复 数 据 系 统 </td>
+<tr>
+ <td colspan="9" align="left"class="shadow-border">
+            <font size="1">版本20.03.06 嘉骅合作：<img src="file:///C:/Users/Diygame/Desktop/系统/images/rt.png" id="imgId" width=100" height="15" border="0" alt="">
+     </tr>
+<tr>
+ <th colspan="9" width="149" align="center" height="33" bgcolor="E9ECEC"class="shadow-border"font size="22">
+    终  端  在  线  修  复  综  合  查  询  系  统</th>
+  </td>
+</tr>
+        <tr>
+            <th width="60%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><b>特 批 修 复            
+            <input type="text" class="search-input" placeholder="数据编码">                
+<button type="button">搜索</button>
+<button type="button">刷新</button>
+           </font></th> 
+        
+            <th width="40%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">
+                <b><p id="timestamp" style="text-align: center;"></p></b></font></th>    
+
+<script>
+  function updateTime() {
+    var now = new Date();
+    var timestampElement = document.getElementById("timestamp");
+    timestampElement.textContent = "数 据 更 新 时 间：" + now.toLocaleString();
+  }
+
+  // 更新时间
+  updateTime();
+
+  // 每秒钟更新一次时间
+  setInterval(updateTime, 1000);
+</script>
+            </td>
+        </tr>
+<table border="1" class="shadow-border" width="133%" height="51" cellspacing="0" cellpadding="0" bordercolorlight="#E1E1E1" bordercolordark="#FFFFFF">
+  <tr>
+    <th width="10%" align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">序号</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">数据内容</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#F5F5F5" class="shadow-border"><font size="2" face="Segoe UI" color="#000000">状态</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">垫付金额</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">额外返佣福利</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">盈利范围</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">认证进度</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">数据编码</font></th>
+  </tr>
+  <tr>
+    <th width="10%" align="center" height="28" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">①</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">认证双数据</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="2" face="Segoe UI" color="#000000">✅</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">112000/人</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">———</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">实时返现</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><button type="button">77.77%</button></font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><button type="button">领取</button></font></th>
+  </tr>
+  <tr>
+    <th width="10%" align="center" height="28" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">②</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">认证单数据</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="2" face="Segoe UI" color="#000000">✅</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">138000/人</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">———</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">实时返现</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><button type="button">77.77%</button></font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><button type="button">领取</button></font></th>
+  </tr>
+  <tr>
+    <th width="10%" align="center" height="28" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">③</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">佣金三期单</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="2" face="Segoe UI" color="#000000">✅</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">158000/人</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">———</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000">实时返现</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><button type="button">00.00%</button></font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><button type="button">领取</button></font></th>
+  </tr>
+  <tr>
+    <th width="10%" align="center" height="28" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#FF0000">♻</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#FF0000">无需认证单</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="2" face="Segoe UI" color="#FF0000">✅</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#FF0000">188000/人</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#FF0000">———</font></th>
+    <th width="15%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#FF0000">立即返现</font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#FF0000"><button type="button">99.99%</button></font></th>
+    <th width="10%" align="center" height="33" bgcolor="#D3D3D3" class="shadow-border"><font size="1" face="Segoe UI" color="#FF0000"><button type="button">领取</button></font></th>
+  </tr>
+         <tr>
+                     <th  colspan="8"align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><b>【欢迎加入北京嘉骅 领取请以实时在线单子为准】</b></th></tr>            
+        <tr>
+          <th colspan="8"align="center" height="28" bgcolor="#F5F5F5" class="shadow-border"><font size="1" face="Segoe UI" color="#000000"><b>
+                所有推广单均录入大数据系统，请引导真实推广，如有虚假推广将取消资格...</font></th>
+        </tr>
+ </tr>
+
+<td colspan="8" height="50" class="shadow-border" align="center" background-repeat:repeat-x;">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+    <fieldset style=" padding: 0px; box-sizing: border-box;">
+      <p align="center" style="text-align:center; font-size:9.0pt; mso-bidi-font-family:Arial; color:#003F7B; font-weight: bold; margin: 0;">
+        第<span class="shadow-border" lang="en-us"> 1 </span> 页 
+        <a class="shadow-border" href="修复单.htm"><span lang="EN-US">上一页</span></a>
+        <a class="shadow-border" href="<!DOCTYPE html>
+  </p>
+    </fieldset>
+  </div>
+</td>
+    </table>
+</body>
+</html>
+"
+
