@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  <title>无标题文档</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script language="JavaScript" src="js/jquery.js"></script>
+  <script type="text/javascript"> 
+    $(function(){  
+      //顶部导航切换
+      $(".nav li a").click(function(){
+        $(".nav li a.selected").removeClass("selected")
+        $(this).addClass("selected");
+      }) 
+    })
+  </script>
+  <style>
+    .topleft {
+      width: 20%;
+      float: left;
+    }
+
+
+    .topright {
+        position: fixed;
+        top: 10px; /* 距离视口顶部的距离 */
+
+        right: 10px; /* 距离视口右侧的距离 */
+        z-index: 9999; /* 控制元素的层叠顺序 */
+    }
+</style>
+</head>
+<body>
+  <div class="topleft">
+    <img src="https://img2.imgtp.com/2024/03/15/As6wrBpd.png" id="imgId" title="系统首页" />
+
+  <div class="topright">
+    <img src="https://www.edai.com/edai2/Resource/images/show2.jpg" style="width: 82%; height: auto; margin-top: -10px; margin-left: -100px;" />
+
+  </div>
+            
+</body>
+</html>

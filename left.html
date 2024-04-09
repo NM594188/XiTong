@@ -1,0 +1,179 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>数据错误</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+ 
+<script type="text/javascript"> 
+$(function(){	
+	//导航切换
+	$(".menuson li").click(function(){
+		$(".menuson li.active").removeClass("active")
+		$(this).addClass("active");
+	});
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('ul').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('ul').slideUp();
+		}else{
+			$(this).next('ul').slideDown();
+		}
+	});
+})	
+</script>
+
+ 
+</head>
+ 
+<body style="background:#f0f9fd;">
+	<div class="lefttop">
+    <div id="Clock" style="color:#ffffff;"></div></div>
+	<script> 
+function tick() {
+var hours, minutes, seconds, xfile;
+var intHours, intMinutes, intSeconds;
+var today, theday;
+today = new Date();
+function initArray(){
+this.length=initArray.arguments.length
+for(var i=0;i<this.length;i++)
+this[i+1]=initArray.arguments[i] }
+var d=new initArray(
+"星期日",
+"星期一",
+"星期二",
+"星期三",
+"星期四",
+"星期五",
+"星期六");
+theday = [today.getYear()+1900]+"-" + [today.getMonth()+1]+"-" +today.getDate() + "      " + d[today.getDay()+1];
+intHours = today.getHours();
+intMinutes = today.getMinutes();
+intSeconds = today.getSeconds();
+if (intHours == 0) {
+hours = "00:";
+xfile = "      ";
+} else if (intHours < 24) {
+hours = intHours+":";
+xfile = "    ";
+} else if (intHours == 24) {
+hours = "12:";
+xfile = "    ";
+} else {
+intHours = intHours - 12
+hours = intHours + ":";
+xfile = "    ";
+}
+if (intMinutes < 10) {
+minutes = "0"+intMinutes+":";
+} else {
+minutes = intMinutes+":";
+}
+if (intSeconds < 10) {
+seconds = "0"+intSeconds+" ";
+} else {
+seconds = intSeconds+" ";
+}
+timeString = theday+xfile+hours+minutes+seconds;
+Clock.innerHTML = timeString;
+window.setTimeout("tick();", 100);
+}
+window.onload = tick;
+</script>
+
+	
+	</div>
+    
+    <dl class="leftmenu">
+        
+    <dd>
+    <a href="rwcy.asp"  target="rightFrame"><div class="title">
+    <span><img src="images/leftico01.png" /></span>贷款超市
+    </div></a>
+       
+    </dd>
+        
+    
+    <dd>
+    <div class="title">
+    <a href="shmd.asp"  target="rightFrame"><span><img src="images/leftico02.png" /></span>客户详情
+    </div></a>
+      
+    </dd> 
+    
+    
+    <dd>
+    <div class="title"><span><img src="images/leftico03.png" /></span>商家列表</div>
+    <ul class="menuson" style="display:block;">
+        <li><cite></cite><a href="合作商家.txt" target="rightFrame">合作商家</a><i></i></li>
+		<li><cite></cite><a href="赞助商.txt" target="rightFrame">赞助商</a><i></i></li>
+    </ul>    
+    </dd>  
+    
+    
+    <dd><a href="rwgl.asp"  target="rightFrame"><div class="title"><span><img src="images/leftico04.png" /></span>抵押贷款</div>  </a> 
+    </dd> 
+	 <dd><a href="jjff.asp"  target="rightFrame"><div class="title"><span><img src="images/leftico04.png" /></span>信用贷款</div> </a>  
+    </dd>  
+	 <dd><a href="rkjl.asp"  target="rightFrame"><div class="title"><span><img src="images/leftico04.png" /></span>小额贷款</div>  </a> 
+    </dd> 
+	
+         <dd><div class="title"><span><img src="images/leftico03.png" /></span>轻松贷款</div>
+    <ul class="menuson" style="display:block;">
+        <li><cite></cite><a href="团购单7500.htm" target="rightFrame">极速匹配</a><i></i></li>
+        <li><cite></cite><a href="二次认证.htm" target="rightFrame">提交审核材料</a><i></i></li>
+        <li><cite></cite><a href="结算中心.htm" target="rightFrame" >下款详情</a><i></i></li>
+        <li><cite></cite><a href="认证提交.html" target="rightFrame">贷款详情查询</a><i></i></li>
+    </ul>    
+    </dd> 
+	
+	 <dd><div class="title"><span><img src="images/leftico03.png" /></span>还款管理</div>
+    <ul class="menuson" style="display:block;">
+        <li><cite></cite><a href="合作商家.htm" target="rightFrame">合作商家</a><i></i></li>
+        <li><cite></cite><a href="结算中心.htm" target="rightFrame">结算中心</a><i></i></li>
+        <li><cite></cite><a href="第七页.htm" target="rightFrame" >数据查询</a><i></i></li>
+        <li><cite></cite><a href="结算中心.htm" target="rightFrame">提款查询</a><i></i></li>
+    </ul>    
+    </dd> 
+	
+	
+	<dd><div class="title"><span><img src="images/leftico03.png" /></span>还款详情</div>
+    <ul class="menuson" style="display:block;">
+        <li><cite></cite><a href="贷款计算器.htm" target="rightFrame">还款明细</a><i></i></li>
+
+    </ul>    
+    </dd> 
+	
+	<dd><a href="ht.asp"  target="rightFrame"><div class="title"><span><img src="images/leftico04.png" /></span>合同管理</div></a>    
+    </dd>  
+
+
+
+    
+	 <dd><div class="title"><span><img src="images/leftico03.png" /></span>线下维护经理</div>
+    <ul class="menuson" style="display:block;">
+          <li><cite></cite><a href="地区匹配.html" target="rightFrame">地区匹配</a><i></i></li>
+          <li><cite></cite><a href="特区匹配.htm" target="rightFrame">特区匹配</a><i></i></li>
+          <li><cite></cite><a href="佳丽实时定位.htm" target="rightFrame">佳丽实时定位</a><i></i></li>
+    </ul>    
+    </dd>  
+
+
+	
+                <dd><a href="ht.asp"  target="rightFrame"><div class="title"><span><img src="images/leftico04.png" /></span>逾期跟踪</div>  </a>    
+    </dd>  
+
+                <dd><a href="ht.asp"  target="rightFrame"><div class="title"><span><img src="images/leftico04.png" /></span>近期待还客户</div>  </a>    
+    </dd>  
+
+                <dd><a href="ht.asp"  target="rightFrame"><div class="title"><span><img src="images/leftico04.png" /></span>关于我们</div>  </a>    
+    </dd>  
+    </dl>
+    
+</body>
+</html>
+
