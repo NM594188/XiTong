@@ -7,20 +7,20 @@ document.write(" ")
 if(navigator.appName == "Netscape")
 {
 document.write(1900+year);
-document.write("年");
+document.write("脛锚");
 document.write(month);
-document.write("月");
+document.write("脭脗");
 document.write(date);
-document.write("日");
+document.write("脠脮");
 }
 if(navigator.appVersion.indexOf("MSIE") != -1)
 {
 document.write(year);
-document.write("年");
+document.write("脛锚");
 document.write(month);
-document.write("月");
+document.write("脭脗");
 document.write(date);
-document.write("日");
+document.write("脠脮");
 document.write(" ");
 }
 //--> 
