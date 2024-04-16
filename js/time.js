@@ -1,4 +1,4 @@
-<!--
+
 todayDate = new Date();
 date = todayDate.getDate();
 month= todayDate.getMonth() +1;
@@ -23,4 +23,4 @@ document.write(date);
 document.write("ÈÕ");
 document.write(" ");
 }
-//--> 
+
