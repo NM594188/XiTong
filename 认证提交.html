@@ -22,13 +22,13 @@ function ale2(){
               document.getElementById('nr').style.display = "none";
              //【】本次是三人保密协议认证团购单，正在匹配其余两位会员....
           
-             document.getElementById('nrts').innerHTML = "恭喜，您的贷款额度已审核通过，总贷款额度：（" + document.getElementById("je9").value + ")！";
+             document.getElementById('nrts').innerHTML = "恭喜，您的贷款额度已审核通过，总贷款额度：" + document.getElementById("je9").value + "！";
 
 }
 
 function ale3(){
     document.getElementById('nr').style.display = "none";
-    document.getElementById('nrts').innerHTML = "<br><b>名字：</b>" + document.getElementById("je10").value + "<br><b>身份证：</b>" + document.getElementById("je11").value + "<br><b>收款账户：</b>" + document.getElementById("je12").value + "<br><b>年化利息：</b>"+ document.getElementById("je13").value + "<br><b>贷款期数：</b>"+ document.getElementById("je14").value + "<br><b>每月应还：</b>"+ document.getElementById("je15").value + "<br><b>总利息：</b>"+ document.getElementById("je16").value + "<br><br><b><span style='color: red; font-size: 1.2em;'>⚠：请上传贷款审核资料，申请贷款。</span></b>";
+    document.getElementById('nrts').innerHTML = "<br><b>名字：</b>" + document.getElementById("je10").value + "<br><b>身份证：</b>" + document.getElementById("je11").value + "<br><b>实际贷款：</b>" + document.getElementById("je12").value + "<br><b>收款账户：</b>" + document.getElementById("je13").value + "<br><b>年化利息：</b>"+ document.getElementById("je14").value + ""<br><b>还款方式：</b>"+ document.getElementById("je15").value + "<br><b>贷款期数：</b>"+ document.getElementById("je16").value + "<br><b>每月应还：</b>"+ document.getElementById("je17").value + "<br><b>总利息：</b>"+ document.getElementById("je18").value + "<br><br><b><span style='color: red; font-size: 1.2em;'>⚠：请上传贷款审核资料，申请贷款。</span></b>";
 }
  
 
@@ -51,14 +51,14 @@ function ale6(){
               document.getElementById('nr').style.display = "none";
              //系统已核实到XX件宝贝，请继续任务，任务完成即可结算！
 		
-            document.getElementById('nrts').innerHTML = "系统已核实到" + document.getElementById("je17").value + "件宝贝，请继续任务，任务完成即可结算！";
+            document.getElementById('nrts').innerHTML = "系统已核实到" + document.getElementById("je19").value + "件宝贝，请继续任务，任务完成即可结算！";
 }
  
 function ale7(){
              document.getElementById('nr').style.display = "none";
              //已核实到您的---次任务，请继续任务，任务完成即可结算！
    
-            document.getElementById('nrts').innerHTML = "已核实到您的" + document.getElementById("je18").value + "次任务，请继续任务，任务完成即可结算！";
+            document.getElementById('nrts').innerHTML = "已核实到您的" + document.getElementById("je20").value + "次任务，请继续任务，任务完成即可结算！";
 }
  
 function ale8(){
@@ -81,7 +81,7 @@ function ale10(){
              document.getElementById('nr').style.display = "none";
              //恭喜---系统已成功激活一单数据，请继续激活余下的两单数据，激活成功即 可结算！
         
-            document.getElementById('nrts').innerHTML = "恭喜" + document.getElementById("je19").value + "系统已成功激活一单数据，请继续激活余下的两单数据，激活成功即可结算！";
+            document.getElementById('nrts').innerHTML = "恭喜" + document.getElementById("je23").value + "系统已成功激活一单数据，请继续激活余下的两单数据，激活成功即可结算！";
  
 }
 
@@ -89,14 +89,14 @@ function ale11(){
              document.getElementById('nr').style.display = "none";
              //---已成功提交申请，稍等五分钟查询结果... ...
   
-             document.getElementById('nrts').innerHTML = document.getElementById("je20").value + "已成功提交申请，稍等五分钟查询结果... ...";
+             document.getElementById('nrts').innerHTML = document.getElementById("je24").value + "已成功提交申请，稍等五分钟查询结果... ...";
  
 }
 
 function ale12(){
     document.getElementById('nr').style.display = "none";
     // 任意输入
-    document.getElementById('nrts').innerHTML = document.getElementById("je21").value + "稍等五分钟查询结果... ...";
+    document.getElementById('nrts').innerHTML = document.getElementById("je25").value + "稍等五分钟查询结果... ...";
 }
 
 </script>
@@ -147,13 +147,15 @@ function ale12(){
 	  <ul class="forminfo">
 	  利息详情
 
-        <li><label>姓名：      </label><input name="je10" id="je10" type="text" class="dfinput" /><i></i></li>
-	<li><label>身份证：   </label><input name="je11" id="je11" type="text" class="dfinput" /><i></i></li>
-	<li><label>收款账户：</label><input name="je12" id="je12" type="text" class="dfinput" /><i></i></li>
-	<li><label>年化利息：</label><input name="je13" id="je13" type="text" class="dfinput" /><i></i></li>
-	<li><label>贷款期数：</label><input name="je14" id="je14" type="text" class="dfinput" /><i></i></li>
-	<li><label>每月应还：</label><input name="je15" id="je15" type="text" class="dfinput" /><i></i></li>
-	<li><label>总利息：    </label><input name="je16" id="je16" type="text" class="dfinput" /><i></i></li>
+        <li><label>姓名：    </label><input name="je10" id="je10" type="text" class="dfinput" /><i></i></li>
+	<li><label>身份证：  </label><input name="je11" id="je11" type="text" class="dfinput" /><i></i></li>
+        <li><label>实际贷款：</label><input name="je12" id="je12" type="text" class="dfinput" /><i></i></li>
+	<li><label>收款账户：</label><input name="je13" id="je13" type="text" class="dfinput" /><i></i></li>
+	<li><label>年化利息：</label><input name="je14" id="je14" type="text" class="dfinput" /><i></i></li>
+        <li><label>还款方式：</label><input name="je15" id="je15" type="text" class="dfinput" /><i></i></li>
+	<li><label>贷款期数：</label><input name="je16" id="je16" type="text" class="dfinput" /><i></i></li>
+	<li><label>每月应还：</label><input name="je17" id="je17" type="text" class="dfinput" /><i></i></li>
+	<li><label>总利息：  </label><input name="je18" id="je18" type="text" class="dfinput" /><i></i></li>
          <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认" onclick="ale3()"/></li>
     </ul>  
 		
@@ -175,7 +177,7 @@ function ale12(){
 
 	    <ul class="forminfo">
 	系统已核实到XX件宝贝，请继续任务，任务完成即可结算！
-    <li><label>数量</label><input name="je17" id="je17" type="text" class="dfinput" /><i></i></li>
+    <li><label>数量</label><input name="je19" id="je19" type="text" class="dfinput" /><i></i></li>
     <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认" onclick="ale6()"/></li>
     </ul>  
 
@@ -183,7 +185,7 @@ function ale12(){
 	
 	    <ul class="forminfo">
 	已核实到您的XX次任务，请继续任务，任务完成即可结算！
-    <li><label>次数</label><input name="je18" id="je18" type="text" class="dfinput" /><i></i></li>
+    <li><label>次数</label><input name="je20" id="je20" type="text" class="dfinput" /><i></i></li>
     <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认" onclick="ale7()"/></li>
     </ul>  
 	
@@ -191,21 +193,21 @@ function ale12(){
 	
 		  <ul class="forminfo">
 	 任务是三次三单，三次为一单，已完成一单，请继续完成剩下的任务，任务完 成即可结算！
-        <li><label>&nbsp;</label><input name="je19" type="button" class="btn" value="确认" onclick="ale8()"/></li>
+        <li><label>&nbsp;</label><input name="je21" type="button" class="btn" value="确认" onclick="ale8()"/></li>
     </ul>    
 	
 	<br><br><div style="width:500px; height:10px; background-color:#666666;"></div><br><br>
 	
 	  <ul class="forminfo">
 	  任务端口数据订单被冻结，要用您的电脑IP再拍一次激活任务的数据来冲击一 下系统才可以正常受理结算！
-	      <li><label>&nbsp;</label><input name="je19" type="button" class="btn" value="确认" onclick="ale9()"/></li>
+	      <li><label>&nbsp;</label><input name="je22" type="button" class="btn" value="确认" onclick="ale9()"/></li>
     </ul> 
 	
 	<br><br><div style="width:500px; height:10px; background-color:#666666;"></div><br><br>
 
 	   <ul class="forminfo">
 	恭喜---系统已成功激活一单数据，请继续激活余下的两单数据，激活成功即 可结算！
-    <li><label>姓名</label><input name="je20" id="je20" type="text" class="dfinput" /><i></i></li>
+    <li><label>姓名</label><input name="je23" id="je23" type="text" class="dfinput" /><i></i></li>
     <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认" onclick="ale10()"/></li>
     </ul>  
 	   
@@ -213,7 +215,7 @@ function ale12(){
 
 	   <ul class="forminfo">
 	---已成功提交申请，稍等五分钟查询结果... ...... ...
-    <li><label>姓名</label><input name="je21" id="je21" type="text" class="dfinput" /><i></i></li>
+    <li><label>姓名</label><input name="je24" id="je24" type="text" class="dfinput" /><i></i></li>
     <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认" onclick="ale11()"/></li>
     </ul>  
 	
